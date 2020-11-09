@@ -1,0 +1,15 @@
+import os
+
+
+class DrawBuilder:
+
+    def draw(self, arg):
+        pass
+
+
+class ConcreteDrawBuilder:
+
+    def draw(self, arg):
+        """Enter 'draw' to draw the selected file."""
+        os.system("Graphviz\\bin\\dot.exe  -Tpng -O classfile.dot")
+        print("Drawing UML diagram")
